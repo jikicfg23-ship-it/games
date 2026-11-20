@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قعدة صحاب - 6 ألعاب جماعية</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <h1>🎲 قعدة صحاب</h1>
+      <p>6 ألعاب جماعية في مكان واحد للخروجات واللمّة</p>
+    </header>
+
+    <main id="home-screen" class="games-grid">
+      <button class="game-card" onclick="openGame('game1')">
+        <span class="emoji">🎯</span>
+        <h2>قول أو اعمل</h2>
+        <p>حجر نرد يحدد مصيرك بين سؤال صريح أو حكم جريء</p>
+      </button>
+
+      <button class="game-card" onclick="openGame('game2')">
+        <span class="emoji">⚖️</span>
+        <h2>لو خيروك</h2>
+        <p>4 أقسام متنوعة واللي ينسحب يتعاقب فورًا</p>
+      </button>
+
+      <button class="game-card" onclick="openGame('game3')">
+        <span class="emoji">🕵️</span>
+        <h2>برا السالفة</h2>
+        <p>اكتشفوا مين الجاسوس اللي مش عارف الموضوع</p>
+      </button>
+
+      <button class="game-card" onclick="openGame('game4')">
+        <span class="emoji">🙋</span>
+        <h2>عمرك عملت كذا؟</h2>
+        <p>مواقف محرجة واللي عملها يعترف</p>
+      </button>
+
+      <button class="game-card" onclick="openGame('game5')">
+        <span class="emoji">🎬</span>
+        <h2>بدون كلام</h2>
+        <p>مثّل اسم الفيلم أو المسرحية قبل ما الوقت يخلص</p>
+      </button>
+
+      <button class="game-card" onclick="openGame('game6')">
+        <span class="emoji">👈</span>
+        <h2>مين فينا؟</h2>
+        <p>عدّوا لـ 3 وشاوروا على أكتر شخص ينطبق عليه الموقف</p>
+      </button>
+    </main>
+
+    <section id="game-screen" class="game-screen hidden">
+      <div class="top-bar">
+        <button class="btn-back" onclick="goHome()">🏠 الرئيسية</button>
+        <h2 id="active-game-title"></h2>
+      </div>
+      <div id="game-content" class="game-content"></div>
+    </section>
+  </div>
+
+  <script src="game1_truth_dare.js"></script>
+  <script src="game2_would_you_rather.js"></script>
+  <script src="game3_spy.js"></script>
+  <script src="game4_never_have_i.js"></script>
+  <script src="game5_charades.js"></script>
+  <script src="game6_most_likely.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
